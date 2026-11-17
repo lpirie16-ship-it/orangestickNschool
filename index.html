@@ -145,6 +145,14 @@ footer{background:var(--ink);color:#c9bcb4;padding:3rem 0;font-size:12.5px}
 footer .logo{color:#fff}
 .ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;align-items:end}
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-926962759"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-926962759');
+</script>
 </head>
 <body>
 
@@ -358,7 +366,7 @@ footer .logo{color:#fff}
           <dt>住所</dt><dd>愛知県豊橋市前田南町2-8-24</dd>
           <dt>電話</dt><dd><a href="tel:0532525570">0532-52-5570</a>（スクール）</dd>
           <dt>時間</dt><dd>10:30〜20:00／隔週日曜休み</dd>
-          <dt>併設サロン</dt><dd>0532-56-3778（10:00〜20:00／日曜休み）</dd>
+          <dt>併設サロン</dt><dd><a href="https://lpirie16-ship-it.github.io/salon-orangestick/" target="_blank">ネイルサロン オレンジスティック</a><br>0532-56-3778（月〜土 10:00〜20:00／第2・4日曜 10:00〜17:00）</dd>
         </dl>
       </div>
       <div class="card">
@@ -384,7 +392,7 @@ footer .logo{color:#fff}
 <footer>
   <div class="wrap ft">
     <div><a href="#top" class="logo">Orange Stick<small style="color:#c9bcb4">NAIL SCHOOL</small></a>
-      <p style="margin-top:.8rem">豊橋本校：JNA本部認定ネイルスクール（認定番号 0123-1）</p></div>
+      <p style="margin-top:.8rem">豊橋本校：JNA本部認定ネイルスクール（認定番号 0123-1）</p><p><a href="https://lpirie16-ship-it.github.io/salon-orangestick/" target="_blank" style="color:#fff">併設ネイルサロンのサイトはこちら →</a></p></div>
     <p>© 2026 Orange Stick Nail School</p>
   </div>
 </footer>
@@ -396,6 +404,8 @@ function openTab(k){
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+k));
   document.querySelector('nav').classList.remove('open');
 }
+function fromHash(){const h=location.hash;if(h==='#recruit-teacher'||h==='#recruit-student'){openTab(h.endsWith('teacher')?'teacher':'student');document.getElementById('recruit').scrollIntoView();}}
+window.addEventListener('hashchange',fromHash);window.addEventListener('load',fromHash);
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
 function build(e,k){
   e.preventDefault();
@@ -409,12 +419,31 @@ function build(e,k){
     <div style="display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn" href="${href}">メールアプリで開く</a><button type="button" class="btn ghost" id="cp-${k}">内容をコピー</button></div>`;
   out.querySelector('pre').textContent=subj+'\n'+body;
   out.classList.add('on');
+  osTrack('form');
   document.getElementById('cp-'+k).onclick=async ev=>{
     try{await navigator.clipboard.writeText(subj+'\n'+body);ev.target.textContent='コピーしました';}
     catch(_){ev.target.textContent='コピーできませんでした';}
   };
   return false;
 }
+</script>
+<script>
+/* コンバージョン計測：Google広告で作成した各アクションの「ラベル」を '' の中に入れてください */
+var OS_CONV = { tel: '', line: '', hotpepper: '', form: '' };
+function osTrack(kind){
+  try{
+    gtag('event', 'os_' + kind);
+    if (OS_CONV[kind]) gtag('event', 'conversion', { send_to: 'AW-926962759/' + OS_CONV[kind] });
+  }catch(e){}
+}
+document.addEventListener('click', function(e){
+  var a = e.target.closest && e.target.closest('a'); if(!a) return;
+  var h = a.getAttribute('href') || '';
+  if (h.indexOf('tel:') === 0) osTrack('tel');
+  else if (h.indexOf('line.me') > -1) osTrack('line');
+  else if (h.indexOf('hotpepper.jp') > -1) osTrack('hotpepper');
+  else if (h.indexOf('mailto:') === 0) osTrack('form');
+});
 </script>
 </body>
 </html>
