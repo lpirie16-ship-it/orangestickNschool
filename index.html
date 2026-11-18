@@ -415,7 +415,7 @@ function build(e,k){
   const body=lines.join('\n');
   const out=document.getElementById('o-'+k);
   const href=`mailto:${MAIL}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @orangestick でも受け付けています）。<pre></pre>
+  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @977cdpjaでも受け付けています）。<pre></pre>
     <div style="display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn" href="${href}">メールアプリで開く</a><button type="button" class="btn ghost" id="cp-${k}">内容をコピー</button></div>`;
   out.querySelector('pre').textContent=subj+'\n'+body;
   out.classList.add('on');
