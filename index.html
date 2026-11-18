@@ -194,6 +194,7 @@ footer .logo{color:#fff}
         <li><a href="#kanazawa">金沢校</a></li>
         <li><a href="#recruit">生徒・講師募集</a></li>
         <li><a href="#teacher">講師紹介</a></li>
+        <li><a href="#instagram">Instagram</a></li>
         <li><a href="#access">アクセス</a></li>
       </ul>
     </nav>
@@ -381,6 +382,24 @@ footer .logo{color:#fff}
   </div>
 </section>
 
+<!-- INSTAGRAM -->
+<section id="instagram">
+  <div class="wrap">
+    <span class="eyebrow">Instagram</span>
+    <h2 class="sec">作品・授業の様子</h2>
+    <p class="sec-lead">講師の作品や授業の様子をInstagramで発信しています。</p>
+    <div style="margin-top:2rem"><behold-widget feed-id="ViMTloHJNmNZcqWR6kQf"></behold-widget>
+<script>
+  (() => {
+    if(window.__bhldScript)return;window.__bhldScript=true;
+    const d=document,s=d.createElement("script");s.type="module";
+    s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
+  })();
+</script></div>
+    <div style="margin-top:1.5rem;text-align:center"><a href="https://www.instagram.com/yokomolinari/" target="_blank" class="btn ghost">Instagramをフォロー（@yokomolinari）</a></div>
+  </div>
+</section>
+
 <!-- ACCESS -->
 <section id="access" style="border-bottom:none">
   <div class="wrap">
@@ -400,7 +419,7 @@ footer .logo{color:#fff}
         <h3>金沢校</h3>
         <dl>
           <dt>住所</dt><dd>石川県金沢市駅西本町1-3-20 近藤ビル202</dd>
-          <dt>電話</dt><dd><a href="tel:09035666954">090-3566-6954</a>（受付中）</dd>
+          <dt>電話</dt><dd><a href="tel:09035666954">090-3566-6954</a>（12月10日〜受付開始）</dd>
           <dt>時間</dt><dd>平日 10:00〜17:00（予定）</dd>
           <dt>開校</dt><dd>2026年12月 開校</dd>
         </dl>
@@ -409,7 +428,7 @@ footer .logo{color:#fff}
     <div class="card" style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:center">
       <div style="font-size:14px">
         <div><b style="font-weight:500">メール</b>　<a href="mailto:orangestick360@gmail.com">orangestick360@gmail.com</a></div>
-        <div><b style="font-weight:500">LINE公式</b>　@977cdpja</div>
+        <div><b style="font-weight:500">LINE公式</b>　@orangestick</div>
         <div><b style="font-weight:500">Instagram</b>　<a href="https://www.instagram.com/yokomolinari/" target="_blank">@yokomolinari</a></div>
       </div>
       <a href="#recruit" class="btn" onclick="openTab('student')">見学・無料体験を申し込む</a>
@@ -443,7 +462,7 @@ function build(e,k){
   const body=lines.join('\n');
   const out=document.getElementById('o-'+k);
   const href=`mailto:${MAIL}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @977cdpja でも受け付けています）。<pre></pre>
+  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @orangestick でも受け付けています）。<pre></pre>
     <div style="display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn" href="${href}">メールアプリで開く</a><button type="button" class="btn ghost" id="cp-${k}">内容をコピー</button></div>`;
   out.querySelector('pre').textContent=subj+'\n'+body;
   out.classList.add('on');
