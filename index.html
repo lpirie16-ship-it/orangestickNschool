@@ -141,47 +141,37 @@ textarea{min-height:110px;resize:vertical}
 .acc dt,.acc dd{padding:.6rem 0;border-bottom:1px solid var(--rule)}
 .acc dt{color:var(--stone);font-size:12.5px}
 
+/* setsumeikai */
+.topbar{display:block;background:var(--peach);color:#fff;text-align:center;font-size:13px;padding:.55rem 1rem;text-decoration:none;letter-spacing:.03em;line-height:1.6}
+.topbar:hover{background:var(--peach-d)}
+.topbar b{font-weight:700;margin-right:.6rem}
+.sm{background:var(--cream)}
+.sm-badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.sm-badges span{background:#fff;border:1px solid var(--peach);color:var(--peach-d);border-radius:999px;padding:.3rem 1rem;font-size:13px;font-weight:500}
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem}
+@media(max-width:700px){.days{grid-template-columns:1fr}}
+.day{background:#fff;border:1px solid var(--rule);border-radius:14px;padding:1.4rem}
+.day h3{font-family:var(--serif);font-size:2rem;font-weight:400;line-height:1;margin-bottom:1rem}
+.day h3 small{font-family:var(--sans);font-size:13px;color:var(--peach-d);margin-left:.3rem}
+.slots{display:flex;flex-wrap:wrap;gap:.5rem}
+.slot{font-family:var(--sans);font-size:14px;font-weight:500;background:var(--blush);border:1px solid transparent;border-radius:8px;padding:.5rem .9rem;min-height:44px;cursor:pointer;color:var(--ink)}
+.slot:hover{border-color:var(--peach);background:#fff}
+.sm-note{font-size:12.5px;color:var(--stone);margin-top:1rem}
+.sm .card ul{list-style:none;font-size:13.5px}
+.sm .card li{padding:.4rem 0;border-bottom:1px dashed var(--rule)}
+.sm .card li::before{content:"・";color:var(--peach)}
+.sm-venue{display:grid;grid-template-columns:1fr 220px;gap:2rem;align-items:center;margin-top:1.5rem}
+@media(max-width:700px){.sm-venue{grid-template-columns:1fr}}
+.sm-venue img{width:100%;border-radius:10px;border:1px solid var(--rule);display:block;box-shadow:0 6px 20px rgba(43,37,34,.08)}
+
 footer{background:var(--ink);color:#c9bcb4;padding:3rem 0;font-size:12.5px}
 footer .logo{color:#fff}
 .ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;align-items:end}
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-926962759"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-926962759');
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "JobPosting",
-  "title": "ネイルスクール講師（金沢校）",
-  "description": "<p>2026年12月開校のネイルスクールオレンジスティック金沢校で、ネイル技術を教える講師を募集します。</p><p><b>仕事内容</b>：生徒への少人数・マンツーマンのネイル技術指導、検定対策、教室運営のサポート。カリキュラムと教材は豊橋本校で用意しています。</p><p><b>勤務</b>：週3日、平日10:00〜17:00</p><p><b>雇用形態</b>：パートまたは業務委託（ご相談）</p><p><b>応募資格</b>：JNA認定講師資格をお持ちの方。ネイリスト技能検定・ジェルネイル技能検定の上位級をお持ちの方歓迎。ブランクのある方もご相談ください。</p>",
-  "datePosted": "2026-11-18",
-  "validThrough": "2027-03-31T23:59",
-  "employmentType": ["PART_TIME", "CONTRACTOR"],
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "オレンジスティックネイルスクール",
-    "sameAs": "https://school.orangestick360.com/"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "駅西本町1-3-20 近藤ビル202",
-      "addressLocality": "金沢市",
-      "addressRegion": "石川県",
-      "addressCountry": "JP"
-    }
-  },
-  "directApply": true
-}
-</script>
 </head>
 <body>
+
+<a class="topbar" href="#setsumeikai"><b>金沢校</b>スクール説明会・見学会 12/10（木）〜12/12（土）開催｜事前予約制・参加無料 →</a>
 
 <header>
   <div class="wrap hd">
@@ -191,10 +181,10 @@ footer .logo{color:#fff}
       <ul>
         <li><a href="#about">スクールについて</a></li>
         <li><a href="#course">コース</a></li>
+        <li><a href="#setsumeikai">説明会・見学会</a></li>
         <li><a href="#kanazawa">金沢校</a></li>
         <li><a href="#recruit">生徒・講師募集</a></li>
         <li><a href="#teacher">講師紹介</a></li>
-        <li><a href="#instagram">Instagram</a></li>
         <li><a href="#access">アクセス</a></li>
       </ul>
     </nav>
@@ -203,7 +193,7 @@ footer .logo{color:#fff}
 
 <!-- HERO -->
 <div class="hero" id="top">
-  <img class="hero-img" src="images/x0928.jpg" alt="ネイルケアの実習風景">
+  <img class="hero-img" src="images/hero.jpg" alt="ネイルケアの実習風景">
   <div class="wrap" style="position:relative">
     <span class="eyebrow">Toyohashi &amp; Kanazawa — Since 20+ years</span>
     <h1>「ネイルサロンをやりたい」<br>から始まる、<em>ネイリスト人生</em>。</h1>
@@ -212,7 +202,7 @@ footer .logo{color:#fff}
       <a href="#recruit" class="btn" onclick="openTab('student')">見学・無料体験を申し込む</a>
       <a href="#kanazawa" class="btn ghost">金沢校のご案内</a>
     </div>
-    <a href="#kanazawa" class="news"><b>NEWS</b>石川県金沢市に「金沢校」2026年12月開校 ／ 講師・生徒募集中</a>
+    <a href="#setsumeikai" class="news"><b>NEWS</b>金沢校 スクール説明会・見学会 12/10〜12/12 開催（予約制・参加無料）</a>
   </div>
 </div>
 
@@ -247,13 +237,71 @@ footer .logo{color:#fff}
     <p class="sec-lead">目的に合わせてお選びいただけます。期間・料金は個別の時間割によって異なるため、見学・無料体験時にご案内します。</p>
     <div style="margin-top:2.5rem">
       <div class="course"><div><div class="tag">Certification</div><h3>資格取得コース</h3></div>
-        <ul><li>JNAジェルネイル技能検定（初級・中級・上級）対策</li><li>JNECネイリスト技能検定対策</li><li>無料補講</li></ul><img class="course-img" src="images/table-setting.jpg" alt="検定対策のテーブルセッティングを学ぶ生徒"></div>
+        <ul><li>JNAジェルネイル技能検定（初級・中級・上級）対策</li><li>JNECネイリスト技能検定対策</li><li>無料補講・合格保証つき</li></ul><img class="course-img" src="images/table-setting.jpg" alt="検定対策のテーブルセッティングを学ぶ生徒"></div>
       <div class="course"><div><div class="tag">Professional</div><h3>プロ・開業コース</h3></div>
         <ul><li>サロンワーク実習（併設サロンでの研修）</li><li>接客・カウンセリング・衛生管理</li><li>開業準備（看板・挨拶状・在庫/顧客管理）のサポート</li></ul><img class="course-img" src="images/hands-file.jpg" alt="ファイリングの実技"></div>
       <div class="course"><div><div class="tag">Hobby &amp; Self</div><h3>セルフ・趣味コース</h3></div>
         <ul><li>道具の名前からはじめる基礎</li><li>セルフジェル・最新デザイン</li><li>1回完結の講習・セミナーも随時開催</li></ul><img class="course-img" src="images/lesson-smile.jpg" alt="講師の指導で笑顔で練習する生徒"></div>
     </div>
     <div class="benefit"><strong>豊橋本校 修了生の特典</strong>JNA本部認定校ディプロマの授与／JNAジェルネイル技能検定 初級試験の免除／資格試験の優遇／セミナー割引／JNA主催コンペティション出場料割引／入会金免除</div>
+  </div>
+</section>
+
+<!-- SETSUMEIKAI -->
+<section id="setsumeikai" class="sm">
+  <div class="wrap">
+    <span class="eyebrow">Information Session — Kanazawa</span>
+    <h2 class="sec">スクール説明会・見学会 開催のご案内</h2>
+    <p class="sec-lead">「ネイルサロンをやりたい」「私にもできるかな？」気軽にお話ししませんか？<br>金沢校では、受講をご検討中の皆様に向けた個別・少人数制の説明会を開催します。カリキュラム内容や資格取得までの流れ、通学スケジュール、受講料金など、気になる疑問に丁寧にお答えします。</p>
+    <div class="sm-badges"><span>2026年12月10日〜12日</span><span>事前予約制・参加無料</span><span>各回 約60分</span><span>無理な勧誘なし</span></div>
+
+    <div class="days">
+      <div class="day"><h3>12/10<small>（木）</small></h3><div class="slots">
+        <button class="slot" onclick="joinSetsumei('12/10（木）13:00〜')">13:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/10（木）15:00〜')">15:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/10（木）18:00〜')">18:00〜</button></div></div>
+      <div class="day"><h3>12/11<small>（金）</small></h3><div class="slots">
+        <button class="slot" onclick="joinSetsumei('12/11（金）10:00〜')">10:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/11（金）13:00〜')">13:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/11（金）15:00〜')">15:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/11（金）18:00〜')">18:00〜</button></div></div>
+      <div class="day"><h3>12/12<small>（土）</small></h3><div class="slots">
+        <button class="slot" onclick="joinSetsumei('12/12（土）10:00〜')">10:00〜</button>
+        <button class="slot" onclick="joinSetsumei('12/12（土）13:00〜')">13:00〜</button></div></div>
+    </div>
+    <p class="sm-note">※各回とも所要時間は約60分を予定しております。お仕事帰りや休日など、ご都合の良い時間帯をお選びください。時間をタップすると予約フォームに入力されます。</p>
+
+    <div class="grid2" style="margin-top:2rem">
+      <div class="card"><h3 style="margin-top:0">説明会でわかること</h3><ul>
+        <li>初心者からプロを目指すコース・カリキュラム詳細</li>
+        <li>JNEC・JNA各種ネイル検定の取得サポート体制</li>
+        <li>働きながら・子育てしながら通える自由予約制の仕組み</li>
+        <li>受講料・教材費のご案内と無理のないお支払いプラン</li>
+        <li>卒業後のサロン就職・ホームサロン開業支援について</li></ul></div>
+      <div class="card"><h3 style="margin-top:0">こんな方におすすめです</h3><ul>
+        <li>ネイルが好きで、手に職をつけて仕事にしたい方</li>
+        <li>未経験・不器用だけど基礎からしっかり学びたい方</li>
+        <li>他のスクールと迷っていて雰囲気を見てみたい方</li>
+        <li>自宅サロン開業や副業としてネイルを始めたい方</li>
+        <li>無理な勧誘なしで、まずは話だけ聞いてみたい方</li></ul></div>
+    </div>
+
+    <div class="card sm-venue">
+      <div class="acc">
+        <h3>会場・ご予約</h3>
+        <dl>
+          <dt>会場</dt><dd>ネイルスクール オレンジスティック 金沢校</dd>
+          <dt>住所</dt><dd>石川県金沢市駅西本町1-3-20 近藤ビル202</dd>
+          <dt>アクセス</dt><dd>JR金沢駅・西口エリアより好アクセス</dd>
+          <dt>ご予約</dt><dd>下の予約フォーム／LINE公式 @orangestick／<a href="tel:09035666954">090-3566-6954</a></dd>
+        </dl>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem">
+          <a href="#recruit" class="btn" onclick="joinSetsumei('');return false;">説明会・見学会を予約する</a>
+          <a href="images/setsumeikai-flyer.pdf" class="btn ghost" target="_blank" rel="noopener">チラシ（PDF）を見る</a>
+        </div>
+      </div>
+      <figure class="ph-fig"><a href="images/setsumeikai-flyer.pdf" target="_blank" rel="noopener"><img src="images/setsumeikai-flyer.jpg" alt="金沢校 スクール説明会・見学会のチラシ" style="max-height:none"></a><figcaption>タップでチラシ（PDF）を表示</figcaption></figure>
+    </div>
   </div>
 </section>
 
@@ -266,12 +314,12 @@ footer .logo{color:#fff}
     <div class="kz-flex">
       <div class="kz-info">
         <dl>
-          <dt>校名</dt><dd>ネイルスクールオレンジスティック 金沢校</dd>
+          <dt>校名</dt><dd>オレンジスティック ネイルスクール 金沢校</dd>
           <dt>所在地</dt><dd>石川県金沢市駅西本町1-3-20 近藤ビル202</dd>
           <dt>開校</dt><dd>2026年12月 開校</dd>
-          <dt>授業日</dt><dd>平日 10:00〜17:00　※夜間・日は個別にご相談ください</dd>
+          <dt>授業日</dt><dd>平日 10:00〜17:00（予定）　※夜間・土日は個別にご相談ください</dd>
           <dt>指導</dt><dd>豊橋本校と同じカリキュラム・指導方針で、少人数・マンツーマン</dd>
-          <dt>お問い合わせ</dt><dd><a href="tel:09035666954" style="color:#fff">090-3566-6954</a>（受付中）</dd>
+          <dt>お問い合わせ</dt><dd><a href="tel:09035666954" style="color:#fff">090-3566-6954</a></dd>
         </dl>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem">
           <a href="#recruit" class="btn" onclick="openTab('student')">金沢校の生徒募集を見る</a>
@@ -281,7 +329,7 @@ footer .logo{color:#fff}
       <ul class="kz-points">
         <li><b>地元・金沢で本格的に学べる</b>遠方のスクールに通わなくても、資格取得からサロンワークまで金沢で学べます。</li>
         <li><b>本校とつながるサポート</b>豊橋本校の講師陣と連携し、検定対策や開業ノウハウも本校と同じ内容でサポートします。</li>
-        <li><b>開校記念の見学・無料体験</b>開校前から見学・体験のご予約を受け付けています。まずは雰囲気を見にきてください。</li>
+        <li><b>スクール説明会・見学会 12/10〜12/12</b>個別・少人数制、参加無料。まずは雰囲気を見にきてください。<a href="#setsumeikai" style="color:#f0a97f">日程を見る →</a></li>
       </ul>
     </div>
   </div>
@@ -319,7 +367,7 @@ footer .logo{color:#fff}
           <div><label>メールアドレス</label><input name="メール" type="email"></div>
         </div>
         <div class="frow">
-          <div><label>ご希望内容</label><select name="ご希望内容"><option>見学</option><option>無料体験</option><option>資料請求・相談</option></select></div>
+          <div><label>ご希望内容</label><select name="ご希望内容"><option>説明会・見学会（金沢校 12/10〜12）</option><option>見学</option><option>無料体験</option><option>資料請求・相談</option></select></div>
           <div><label>ご希望日時（第1・第2希望）</label><input name="希望日時" placeholder="例）12/5 午前、12/8 14時〜"></div>
         </div>
         <div><label>ネイル経験・ご質問など</label><textarea name="備考"></textarea></div>
@@ -337,8 +385,8 @@ footer .logo{color:#fff}
         <tr><th>勤務地</th><td>石川県金沢市駅西本町1-3-20 近藤ビル202（金沢校）</td></tr>
         <tr><th>勤務日・時間</th><td>週3日／平日 10:00〜17:00</td></tr>
         <tr><th>雇用形態</th><td>パート または 業務委託（ご希望に応じてご相談）</td></tr>
-        <tr><th>応募資格</th><td>JNA認定講師資格をお持ちの方 <br>ネイリスト技能検定１級・ジェルネイル技能検定の上級必須</td></tr>
-        <tr><th>給与・報酬</th><td>経験・資格により優遇</td></tr>
+        <tr><th>応募資格</th><td>JNA認定講師資格をお持ちの方 <span class="ph">［必須／歓迎の別を確定してください］</span><br>ネイリスト技能検定・ジェルネイル技能検定の上位級をお持ちの方歓迎</td></tr>
+        <tr><th>給与・報酬</th><td><span class="ph">［時給・報酬額を記入］</span>　経験・資格により優遇</td></tr>
         <tr><th>開始時期</th><td>2026年12月〜（ご都合に合わせて調整可）</td></tr>
         <tr><th>こんな方に</th><td>教えることが好きな方／開校から一緒に教室をつくりたい方／ブランクがあり講師として復帰したい方</td></tr>
         <tr><th>選考</th><td>応募フォーム送信 → 面談（オンライン可） → 技術確認 → 採用</td></tr>
@@ -375,32 +423,10 @@ footer .logo{color:#fff}
           <li>JNAジェルネイル技能検定 試験官</li>
           <li>JNECネイリスト技能検定 試験官</li>
           <li>ネイルサロン衛生管理指導員</li>
-          <li>NPO法人日本ネイリスト協会　正会員</li>
-          <li>スパルーチェ　マスターエデュケーター</li>
-          <li>ココイスト　マスターエデュケーター</li>
-          <li>リュージェル　マスターエデュケーター</li>
         </ul>
         <p style="margin-top:1rem;font-size:13.5px;color:var(--stone)">「ネイルサロンをやりたい」という想いから始まったネイリスト人生。道具の名前を覚えるところから、一緒にはじめましょう。</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- INSTAGRAM -->
-<section id="instagram">
-  <div class="wrap">
-    <span class="eyebrow">Instagram</span>
-    <h2 class="sec">作品・授業の様子</h2>
-    <p class="sec-lead">講師の作品や授業の様子をInstagramで発信しています。</p>
-    <div style="margin-top:2rem"><behold-widget feed-id="ViMTloHJNmNZcqWR6kQf"></behold-widget>
-<script>
-  (() => {
-    if(window.__bhldScript)return;window.__bhldScript=true;
-    const d=document,s=d.createElement("script");s.type="module";
-    s.src="https://w.behold.so/widget.js";setTimeout(()=>{d.head.append(s);},0);
-  })();
-</script></div>
-    <div style="margin-top:1.5rem;text-align:center"><a href="https://www.instagram.com/yokomolinari/" target="_blank" class="btn ghost">Instagramをフォロー（@yokomolinari）</a></div>
   </div>
 </section>
 
@@ -416,15 +442,15 @@ footer .logo{color:#fff}
           <dt>住所</dt><dd>愛知県豊橋市前田南町2-8-24</dd>
           <dt>電話</dt><dd><a href="tel:0532525570">0532-52-5570</a>（スクール）</dd>
           <dt>時間</dt><dd>10:30〜20:00／隔週日曜休み</dd>
-          <dt>併設サロン</dt><dd><a href="https://orangestick360.com/" target="_blank">ネイルサロン オレンジスティック</a><br>0532-56-3778（月〜土 10:00〜20:00／第2・4日曜 10:00〜17:00）</dd>
+          <dt>併設サロン</dt><dd><a href="https://lpirie16-ship-it.github.io/salon-orangestick/" target="_blank">ネイルサロン オレンジスティック</a><br>0532-56-3778（月〜土 10:00〜20:00／第2・4日曜 10:00〜17:00）</dd>
         </dl>
       </div>
       <div class="card">
         <h3>金沢校</h3>
         <dl>
           <dt>住所</dt><dd>石川県金沢市駅西本町1-3-20 近藤ビル202</dd>
-          <dt>電話</dt><dd><a href="tel:09035666954">090-3566-6954</a>（受付中）</dd>
-          <dt>時間</dt><dd>平日 10:00〜17:00</dd>
+          <dt>電話</dt><dd><a href="tel:09035666954">090-3566-6954</a></dd>
+          <dt>時間</dt><dd>平日 10:00〜17:00（予定）</dd>
           <dt>開校</dt><dd>2026年12月 開校</dd>
         </dl>
       </div>
@@ -432,13 +458,9 @@ footer .logo{color:#fff}
     <div class="card" style="margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:center">
       <div style="font-size:14px">
         <div><b style="font-weight:500">メール</b>　<a href="mailto:orangestick360@gmail.com">orangestick360@gmail.com</a></div>
-        <div><b style="font-weight:500">LINE公式</b>　<a href="https://line.me/R/ti/p/@977cdpja" target="_blank">@977cdpja（友だち追加）</a></div>
-        <div><b style="font-weight:500">Instagram</b>　<a href="https://www.instagram.com/yokomolinari/" target="_blank">@yokomolinari</a></div>
+        <div><b style="font-weight:500">LINE公式</b>　@orangestick</div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:.75rem">
-        <a href="https://line.me/R/ti/p/@977cdpja" target="_blank" class="btn" style="background:#06C755;border-color:#06C755;color:#fff">LINEで相談する</a>
-        <a href="#recruit" class="btn" onclick="openTab('student')">見学・無料体験を申し込む</a>
-      </div>
+      <a href="#recruit" class="btn" onclick="openTab('student')">見学・無料体験を申し込む</a>
     </div>
   </div>
 </section>
@@ -446,7 +468,7 @@ footer .logo{color:#fff}
 <footer>
   <div class="wrap ft">
     <div><a href="#top" class="logo">Orange Stick<small style="color:#c9bcb4">NAIL SCHOOL</small></a>
-      <p style="margin-top:.8rem">豊橋本校：JNA本部認定ネイルスクール（認定番号 0123-1）</p><p><a href="https://orangestick360.com/" target="_blank" style="color:#fff">併設ネイルサロンのサイトはこちら →</a></p><p><a href="https://www.instagram.com/yokomolinari/" target="_blank" style="color:#fff">Instagram（@yokomolinari）→</a></p></div>
+      <p style="margin-top:.8rem">豊橋本校：JNA本部認定ネイルスクール（認定番号 0123-1）</p><p><a href="https://lpirie16-ship-it.github.io/salon-orangestick/" target="_blank" style="color:#fff">併設ネイルサロンのサイトはこちら →</a></p></div>
     <p>© 2026 Orange Stick Nail School</p>
   </div>
 </footer>
@@ -458,9 +480,15 @@ function openTab(k){
   document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+k));
   document.querySelector('nav').classList.remove('open');
 }
-function fromHash(){const h=location.hash;if(h==='#recruit-teacher'||h==='#recruit-student'){openTab(h.endsWith('teacher')?'teacher':'student');document.getElementById('recruit').scrollIntoView();}}
-window.addEventListener('hashchange',fromHash);window.addEventListener('load',fromHash);
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+function joinSetsumei(slot){
+  openTab('student');
+  const f=document.getElementById('f-student');
+  f.elements['希望校舎'].value='金沢校';
+  f.elements['ご希望内容'].value='説明会・見学会（金沢校 12/10〜12）';
+  if(slot) f.elements['希望日時'].value=slot;
+  document.getElementById('recruit').scrollIntoView({behavior:'smooth'});
+}
 function build(e,k){
   e.preventDefault();
   const f=e.target, lines=[];
@@ -469,11 +497,10 @@ function build(e,k){
   const body=lines.join('\n');
   const out=document.getElementById('o-'+k);
   const href=`mailto:${MAIL}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
-  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @977cdpja でも受け付けています）。<pre></pre>
+  out.innerHTML=`下記の内容を <b>${MAIL}</b> 宛にメールでお送りください（LINE公式 @orangestick でも受け付けています）。<pre></pre>
     <div style="display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn" href="${href}">メールアプリで開く</a><button type="button" class="btn ghost" id="cp-${k}">内容をコピー</button></div>`;
   out.querySelector('pre').textContent=subj+'\n'+body;
   out.classList.add('on');
-  osTrack('form');
   document.getElementById('cp-'+k).onclick=async ev=>{
     try{await navigator.clipboard.writeText(subj+'\n'+body);ev.target.textContent='コピーしました';}
     catch(_){ev.target.textContent='コピーできませんでした';}
@@ -481,23 +508,5 @@ function build(e,k){
   return false;
 }
 </script>
-<script>
-/* コンバージョン計測：Google広告で作成した各アクションの「ラベル」を '' の中に入れてください */
-var OS_CONV = { tel: 'pHrhCLqW_LkdEMeogboD', line: 'gBUACL2W_LkdEMeogboD', hotpepper: 'vSeACMCW_LkdEMeogboD', form: '7LWKCMOW_LkdEMeogboD' };
-function osTrack(kind){
-  try{
-    gtag('event', 'os_' + kind);
-    if (OS_CONV[kind]) gtag('event', 'conversion', { send_to: 'AW-926962759/' + OS_CONV[kind] });
-  }catch(e){}
-}
-document.addEventListener('click', function(e){
-  var a = e.target.closest && e.target.closest('a'); if(!a) return;
-  var h = a.getAttribute('href') || '';
-  if (h.indexOf('tel:') === 0) osTrack('tel');
-  else if (h.indexOf('line.me') > -1) osTrack('line');
-  else if (h.indexOf('hotpepper.jp') > -1) osTrack('hotpepper');
-  else if (h.indexOf('mailto:') === 0) osTrack('form');
-});
-</script>
- </body>
+</body>
 </html>
